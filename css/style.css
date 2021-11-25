@@ -126,7 +126,8 @@ span {
 .site-nav .link.curent {
   color: var(--accent-color);
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .curent::after {
@@ -253,7 +254,9 @@ span {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -431,7 +434,8 @@ span {
   height: 44px;
   background-color: inherit;
   color: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 35px;
 }
 
@@ -534,7 +538,8 @@ span {
   /* border: 1px solid #eeeeee; */
   /* padding: 20px 24px; */
   border-top: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-cart {
   padding: 20px 24px;
@@ -687,6 +692,7 @@ footer li {
 .soclist .icon-team-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 35px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soclist .icon-team-link:focus,
