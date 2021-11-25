@@ -360,6 +360,7 @@
       </div>
      </section>
   </main>
+  <!-- ----------foooooter -->
  <footer class="footer ">
   <div class="container footer-container" >
     <div>
@@ -417,6 +418,21 @@
     </li>
   </ul>
 </div>
+<div class="subscribe">
+  <span >Подпишитесь на рассылку</span>
+  <form class="footer-form">
+    <label for="footer_mail"></label>
+    <input class="footer-input" type="email" name="email" id="footer_mail" placeholder="Email" > 
+    <button   class="btn-subscribe"  type="submit">
+      Подписаться
+    <svg class="icon-foot">
+      <use href="./images/icons.svg#icon-telegram"></use>
+    </svg>
+     
+    </button>
+  </form>
+
+</div>
 </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -434,28 +450,44 @@
 <form class="contacts-form js-form" autocomplete="off">
   
     <div class="field">
-      <input class="contact-input" type="text" id="name" placeholder=" " />
+      <input class="contact-input" type="text" id="name" placeholder=" "/>
+       <svg class="icon-team icon-modal">
+        <use href="./images/icons.svg#icon-people"></use>
+      </svg>
+      
       <label class="contact-label" for="name"> Имя </label>
     </div>
     <div class="field">
       <input class="contact-input" type="tel" id="phone" placeholder=" " />
+      <svg class="icon-team icon-modal">
+        <use href="./images/icons.svg#icon-call"></use>
+      </svg>
       <label class="contact-label" for="phone"> Телефон </label>
     </div>
     <div class="field">
       <input class="contact-input" type="email" id="email" placeholder=" " />
+      <svg class=" icon-team icon-modal">
+        <use href="./images/icons.svg#icon-send"></use>
+      </svg>
       <label class="contact-label" for="email"> Почта </label>
     </div>
-    <div class="field">
-  <textarea class="contact-message" name="message" id="message" cols="30" placeholder="Введите текст"></textarea>
+    <div class="field field-massage">
+  <textarea class="contact-message contact-input" name="message" id="message" cols="30" placeholder="Введите текст"></textarea>
   <label class="contact-label" for="message">Комментарий</label>
+    </div>
   <label class="privacy">
     <input class="visually-hidden checkbox" type="checkbox" name="" id="" />
-    <div class="privacy-checkbox"></div>
+    <span class="privacy-checkbox">
+      <svg class="icon-team">
+        <use href="./images/icons.svg#icon-tick"></use>
+      </svg>
+    </span>
+    
     <p class="privacy-text">Соглашаюсь с рассылкой и принимаю</p>
     <a href="" class="privacy-link">Условия договора</a>
   </label>
   <button class="buton send" type="submit">Oтправить</button>
-
+  
 </form>
 
       <!-- </div>
