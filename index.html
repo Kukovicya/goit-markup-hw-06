@@ -421,8 +421,9 @@
 <div class="subscribe">
   <span >Подпишитесь на рассылку</span>
   <form class="footer-form">
-    <label for="footer_mail"></label>
+    <label for="footer_mail">
     <input class="footer-input" type="email" name="email" id="footer_mail" placeholder="Email" > 
+    </label>
     <button   class="btn-subscribe"  type="submit">
       Подписаться
     <svg class="icon-foot">
@@ -450,7 +451,7 @@
 <form class="contacts-form js-form" autocomplete="off">
   
     <div class="field">
-      <input class="contact-input" type="text" id="name" placeholder=" "/>
+      <input class="contact-input" type="text" name="name" id="name" placeholder=" "/>
        <svg class="icon-team icon-modal">
         <use href="./images/icons.svg#icon-people"></use>
       </svg>
@@ -458,14 +459,14 @@
       <label class="contact-label" for="name"> Имя </label>
     </div>
     <div class="field">
-      <input class="contact-input" type="tel" id="phone" placeholder=" " />
+      <input class="contact-input" type="tel" name="phone" id="phone" placeholder=" " />
       <svg class="icon-team icon-modal">
         <use href="./images/icons.svg#icon-call"></use>
       </svg>
       <label class="contact-label" for="phone"> Телефон </label>
     </div>
     <div class="field">
-      <input class="contact-input" type="email" id="email" placeholder=" " />
+      <input class="contact-input" type="email" name="email" id="email" placeholder=" " />
       <svg class=" icon-team icon-modal">
         <use href="./images/icons.svg#icon-send"></use>
       </svg>
@@ -476,7 +477,7 @@
   <label class="contact-label" for="message">Комментарий</label>
     </div>
   <label class="privacy">
-    <input class="visually-hidden checkbox" type="checkbox" name="" id="" />
+    <input class="visually-hidden checkbox" type="checkbox" name="checkbox" id="" />
     <span class="privacy-checkbox">
       <svg class="icon-team">
         <use href="./images/icons.svg#icon-tick"></use>
